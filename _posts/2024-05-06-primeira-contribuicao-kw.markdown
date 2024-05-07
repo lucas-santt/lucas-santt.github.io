@@ -20,13 +20,13 @@ Desse modo, alteramos, em sua maioria, o uso de comandos echo para printf, já q
 
 No total, modificamos 4 arquivos corrigindo 10 erros de *coding style*, abaixo mostrarei um exemplo de um comando echo que substituímos para printf:
 
-{% highlight %}
+{% highlight c %}
     -action_parameters=$(echo "$options" | sed 's/.*--//')
 {% endhighlight %}
 
 para
 
-{% highlight %}
+{% highlight c %}
     -action_parameters=$(printf "%s\n" "$options" | sed 's/.*--//')
 {% endhighlight %}
 
