@@ -20,7 +20,7 @@ Desse modo, documentamos as funções que podem possívelmente retornar erros, c
 
 No total, modificamos 16 arquivos e documentamos 19 erros, abaixo mostrarei um exemplo de um erro que documentamos no arquivo `setup.sh`:
 
-{% highlight c %}
+{% highlight console %}
     else
         warning "setup could not find $config_file_template"
         return 2
@@ -29,7 +29,7 @@ No total, modificamos 16 arquivos e documentamos 19 erros, abaixo mostrarei um e
 
 para
 
-{% highlight c %}
+{% highlight console %}
     else
         warning "setup could not find $config_file_template"
         return 2 # ENOENT
