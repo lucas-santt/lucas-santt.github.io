@@ -20,7 +20,7 @@ Desse modo, documentamos as funções que podem possívelmente retornar erros, c
 
 No total, modificamos 16 arquivos e documentamos 19 erros, abaixo mostrarei um exemplo de um erro que documentamos no arquivo `setup.sh`:
 
-{% highlight console %}
+{% highlight c %}
     else
         warning "setup could not find $config_file_template"
         return 2
@@ -29,7 +29,7 @@ No total, modificamos 16 arquivos e documentamos 19 erros, abaixo mostrarei um e
 
 para
 
-{% highlight console %}
+{% highlight c %}
     else
         warning "setup could not find $config_file_template"
         return 2 # ENOENT
@@ -43,3 +43,7 @@ Alguns dos arquivos alterados:
 - `src/pomodoro.sh`
 
 ## Finalização
+
+Como o kworkflow utiliza um repositório do github para as contribuições, demos um [pull request][pull-request] no repositório para garantir a contribuição.
+
+[pull-request]: https://github.com/kworkflow/kworkflow/pull/1112
