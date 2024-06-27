@@ -25,7 +25,7 @@ Percebemos que um comentário sobre uma pequena confusão dentro do código não
 
 Após alterar o código, o bloco do comentário ficou dentro das boas práticas e o compilador parou de reclamar sobre. Abaixo está o código da maneira correta, após a modificação.
 
-{% highlight c %}
+{% highlight bash %}
 
   /* FIXME: There's a confusion between bpp and depth between this and
    * fbdev helpers. We have to go with 0, meaning "pick the default", 
@@ -42,6 +42,10 @@ Agora apenas faltava realizar o patch e enviá-los por e-mail. Como gerenciamos 
 
 Realizamos um `git commit` e, para criar um arquivo `*.patch` utilizamos o comando `git diff > *.patch`, desse modo conseguimos armazenar todas as contribuições em um arquivo só.
 
-Portanto, apenas falta mandar e-mail para os monitores via o commando `git send-email`, porém não conseguimos enviar o comando pois, devido à autenticação de dois fatores, o gmail não estava aceitando tal maneira de mandar o e-mail.
+Enviamos as modificações para os monitores da disciplinas e recebemos seus feedbacks sobre os patchs, algumas pequenas modificações na descrição e organização dos patchs apenas.
 
-Assim, com ajuda dos própios monitores, enviamos o patch via email manualmente para os para revisão.
+No final, enviamos o patch para os mantenedores oficiais do Kernel e recebemos uma resposta apenas 30 minutos depois, falando que tínhamos que arrumar a descrição do patch. Porém, antes de dar tempo de chegar em casa e arrumar isso, outro mantenedor do kernel respondeu falando que estava tudo bem e que o patch foi aplicado (deve ter percebido que o primeiro email do outro mantenedor estava corrigindo apenas um erro bobo de posição da descrição do patch e não era muito necessário)
+
+[lore-kernel][Email (kernel lore) da contribuição]
+
+[lore-kernel]: https://github.com/Luccaaxx/Luccaaxx.github.io
