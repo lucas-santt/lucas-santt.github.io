@@ -25,12 +25,12 @@ Percebemos que um comentário sobre uma pequena confusão dentro do código não
 
 Após alterar o código, o bloco do comentário ficou dentro das boas práticas e o compilador parou de reclamar sobre. Abaixo está o código da maneira correta, após a modificação.
 
-```text
+```bash
   /* FIXME: There's a confusion between bpp and depth between this and
    * fbdev helpers. We have to go with 0, meaning "pick the default", 
    * wich is XRGB8888 in all cases
    */
-```text
+```
 
 Realizamos a correção de erros e warning similares, também, nos arquivo `drivers/gpu/drm/amd/acp/include/acp_gfx_if.h`
 

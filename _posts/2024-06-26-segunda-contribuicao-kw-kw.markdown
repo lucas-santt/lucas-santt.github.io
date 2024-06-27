@@ -1,10 +1,10 @@
 ---
 layout: post
 title:  "Segunda contribuição para o kworkflow"
-date:   2024-05-26 21:56:55 -0300
+date:   2024-06-26 21:56:55 -0300
 categories: IME-USP MAC0470-Software_Livre
 ---
-Este artigo é uma exploração da minha primeira experiência contribuindo ao [kworflow][kw-git], necessária para um projeto na disciplina de [Desenvolvimento de Software Livre (MAC0470)][MAC0470], realizado em conjunto com [Bruno Levi][bruno-blog].
+Este artigo é uma exploração da minha experiência contribuindo ao [kworflow][kw-git], necessária para um projeto na disciplina de [Desenvolvimento de Software Livre (MAC0470)][MAC0470], realizado em conjunto com [Bruno Levi][bruno-blog].
 
 Após a minha [primeira contribuição para o kworkflow (kw)][first-kw-post], ainda queria realizar mais contribuições. Agora, demos uma olhada nos issues abertos dentro do repositório git do kw e decidimos resolver o [issue #1014][issue-1014].
  
@@ -14,7 +14,7 @@ Quando rodamos testes para o kw, a própria ferramenta cria imagens de container
 Essa foi a sugestão dada por [João Paulo][jppaulo06-git] e por [Rodrigo Siqueira][siqueira-git] no [issue][issue-1014] e, desse modo, realizamos a correção do código para avisar o usuário.
 
 ## Contribuição
-Como é um erro simples, tivemos apenas que alterar o arquivo de testes de integração (`tests/integration/utils.sh`), adicionando uma verificação do tamanho e o id do container criado, as modificações do código estão disponíveis no nosso [commit][pr-commmit].
+Como é um erro simples, tivemos apenas que alterar o arquivo de testes de integração (`tests/integration/utils.sh`), adicionando uma verificação do tamanho e o id do container criado, as modificações do código estão disponíveis no nosso [commit][pr-commit].
 
 ## Conclusão
 
