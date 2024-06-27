@@ -4,13 +4,13 @@ title:  "Criação de um ambiente para o desenvolvimento de um kernel"
 date:   2024-04-20 19:48:32 -0300
 categories: IME-USP MAC0470-Software_Livre
 ---
-Para o desenvolvimento de qualquer kernel, é importante criar um ambiente para evitar possíveis defeitos permanentes no seu computador. Desse modo, tive que criar um ambiente estável para realizar projetos da disciplina de Desenvolvimento de Software (MAC0470) que envolvem o desenvolvimento do kernel linux.
+Para o desenvolvimento de qualquer kernel, é importante criar um ambiente para evitar possíveis defeitos permanentes no seu computador. Como eu quero realizar a minha [primeira contribuição para o kernel linux][primeira-cont], tive que criar um ambiente estável para realizar projetos que envolvem o kernel linux.
 
 ## Tutorias do FLUSP
 
 Utilizei como base os tutoriais elaborados pelo Rodrigo Siqueira no site do Flusp para [criar a máquiva virtual][qemu-kernel], [compilar e instalar o kernel linux][compilar-kernel] e [entender e instalar módulos][entender-modulos].
 
-Embora tenha encontrado vários problemas e erros ao longo do caminho, os tutoriais foram de grande ajuda para o entendimento dos passos realizados pois explicam cada tópico com bastante clareza.
+Embora tenha encontrado vários problemas e erros ao longo do caminho, os tutoriais ajudaram bastante no entendimento dos passos realizados já que explicam cada tópico com bastante clareza.
 
 ## Criando a máquina virtual
 
@@ -22,7 +22,7 @@ Para a criação da máquina virtual, utilizei o qemu para emular e gerenciar a 
 
 Inicialmente, criei uma imagem de 15G e formato qcow2 e tentei instalar Debian Linux, porém a instalação e boot do Debian demorou mais do que eu esperava e não consegui realizar em um tempo razoável.
 
-Desse modo, desisti de instalar o debian e baixei a ISO do linux Ubuntu 22.04, conseguindo instalar e bootar de maneira mais rápida e prática do que o Debian
+Assim, desisti de instalar o debian e baixei a ISO do linux Ubuntu 22.04, conseguindo instalar e bootar de maneira mais rápida e prática do que o Debian
 
 #### Configurando a chave SSH
 
@@ -42,7 +42,7 @@ Após esse processo, consegui um diretório com arquivos compartilhados entre a 
 
 ## Instalar e compilar o kernel linux
 
-Para essa etapa, tive que clonar o diretório Torvalds linux
+Para essa etapa, tive que clonar o [repositório Torvalds linux][torvalds-repositorio]
 
 #### Arquivo config
 
@@ -56,7 +56,7 @@ Não vou mentir, gastei uma quantia de tempo considerável batendo a cabeça e t
 
 Após o config estar pronto, basta compilar e instalar o kernel. Na compilação tive que escolher a quantidade de threads focadas na compilação antes de compilar, demorou um pouco mas a compilação deu certo.
 
-Para a instalação eu redobrei a atenção pois é muito fácil fazer um erro fatal, instalei os módulos e rebootei a vm com o novo kernel, parte em que eu fiquei mais tenso. Porém tudo deu certo e meu computador não explodiu
+Para a instalação eu redobrei a atenção pois é muito fácil fazer um erro fatal, instalei os módulos e rebootei a vm com o novo kernel, parte em que eu fiquei mais tenso. Porém tudo deu certo e meu computador não explodiu.
 
 O tutorial ainda fala sobre remover versões antigas do Kernel para organizar e liberar espaço, porém decidi não realizar tal passo.
 
@@ -76,8 +76,8 @@ Os erros que eu me deparei ao longo dessa jornada me ajudaram a entender mais a 
 
 Após essa experiência, me sinto mais confiante e motivado para, além de emular uma VM com mais conhecimento, desenvolver em algumas partes do sistema onde eu tinha medo por serem críticas ou importantes.
 
-
-
+[primeira-cont]: https://luccaaxx.github.io/posts/primeira-contribuicao-kernel/
 [qemu-kernel]: https://flusp.ime.usp.br/kernel/use-qemu-to-play-with-linux/
 [compilar-kernel]: https://flusp.ime.usp.br/kernel/Kernel-compilation-and-installation/
+[torvalds-repositorio]: https://github.com/torvalds/linux
 [entender-modulos]: https://flusp.ime.usp.br/kernel/play_with_modules/
