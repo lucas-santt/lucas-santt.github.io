@@ -46,6 +46,6 @@ Enviamos as modificações para os monitores da disciplinas e recebemos seus fee
 
 No final, enviamos o patch para os mantenedores oficiais do Kernel e recebemos uma resposta apenas 30 minutos depois, falando que tínhamos que arrumar a descrição do patch. Porém, antes de dar tempo de chegar em casa e arrumar isso, outro mantenedor do kernel respondeu falando que estava tudo bem e que o patch foi aplicado (deve ter percebido que o primeiro email do outro mantenedor estava corrigindo apenas um erro bobo de posição da descrição do patch e não era muito necessário)
 
-[lore-kernel][Email (kernel lore) da contribuição]
+[Email (kernel lore) da contribuição][lore-kernel]
 
 [lore-kernel]: https://github.com/Luccaaxx/Luccaaxx.github.io
