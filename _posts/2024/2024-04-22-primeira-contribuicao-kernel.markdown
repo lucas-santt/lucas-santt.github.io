@@ -3,6 +3,7 @@ layout: post
 title:  "Primeira contribuição para o kernel linux"
 date:   2024-04-22 20:20:15 -0300
 categories: IME-USP MAC0470-Software_Livre
+published: false
 ---
 Este artigo é uma exploração da minha primeira experiência contribuindo ao kernel linux, mais especificamente no subsistema IIO, necessária para um projeto na disciplina de [Desenvolvimento de Software Livre (MAC0470)][MAC0470], realizado em conjunto com [Bruno Levi][bruno-blog].
 

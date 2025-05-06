@@ -3,6 +3,7 @@ layout: post
 title:  "Primeira contribuição para um software livre"
 date:   2024-05-06 20:21:03 -0300
 categories: IME-USP MAC0470-Software_Livre
+published: false
 ---
 Este artigo é uma exploração da minha primeira experiência contribuindo ao [kworflow][kw-git], necessária para um projeto na disciplina de [Desenvolvimento de Software Livre (MAC0470)][MAC0470], realizado em conjunto com [Bruno Levi][bruno-blog].
 

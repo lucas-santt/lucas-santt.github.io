@@ -3,6 +3,7 @@ layout: post
 title:  "Criação de um ambiente para o desenvolvimento de um kernel"
 date:   2024-04-20 19:48:32 -0300
 categories: IME-USP MAC0470-Software_Livre
+published: false
 ---
 Para o desenvolvimento de qualquer kernel, é importante criar um ambiente para evitar possíveis defeitos permanentes no seu computador. Como eu quero realizar a minha [primeira contribuição para o kernel linux][primeira-cont], tive que criar um ambiente estável para realizar projetos que envolvem o kernel linux.
 

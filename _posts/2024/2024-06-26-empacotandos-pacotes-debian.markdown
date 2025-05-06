@@ -3,6 +3,7 @@ layout: post
 title:  "Empacotando pacotes para o debian"
 date:   2024-06-26 22:32:14 -0300
 categories: IME-USP MAC0470-Software_Livre
+published: false
 ---
 Este artigo é uma exploração da minha experiência empacotando pacotes para o debian, necessária para um projeto na disciplina de [Desenvolvimento de Software Livre (MAC0470)][MAC0470], realizado em conjunto com [Bruno Levi][bruno-blog].
 
