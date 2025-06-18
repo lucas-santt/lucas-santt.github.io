@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Contribuindo para o kw e aprendendo bash"
-date:   2025-05-21 12:15:44 -0300
+date:   2025-06-18 12:47:44 -0300
 categories: IME-USP MAC0470-Software_Livre
 ---
 Como parte da disciplina de [Desenvolvimento de Software Livre (MAC0470)][MAC0470], vou contribuir para o projeto do [kworkflow][kw]. Portanto, tive que escolher uma *issue* para trabalhar e realizar uma contribuição.
@@ -46,8 +46,34 @@ update_bootloader "$flag" "$kernel" "$target" "$kernel_image_name" '' '' '' "$fo
 
 Portanto, o último passo era dar um commit para a minha branch e abrir um *pull request* no kworkflow citando a *issue* escolhida. Dessa maneira, criei um [*pull request* #1216][pull-request] explicando as mudança e os seus porquês. Decidi nem comentar na *issue*, apenas citá-la no *pull request*.
 
-Assim, apenas espero os mantenedores responderem a *pull request* e a *issue* para que eu consiga dar continuidade à contribuição.
+# Resposta dos mantenedores
 
+Cerca de uma semana e meia depois, o mantenedor [Rodrigo Siqueira][siqueira] me respondeu falando que já havia implementado uma solução para a issue, apenas não tinha dado pull request ainda.
+Desse modo, pediu para que eu alterasse o pull request para a seguinte solução dele:
+
+```bash
+   # Each distro script should implement update_bootloader
+-  if [[ "$update_grub" -gt 0 ]]; then
+-    #printf '%s\n' "update_bootloader $kernel $target $flag"
+-    update_bootloader "$flag" "$kernel" "$target" "$kernel_image_name" '' "$path_prefix" '' "$force"
+-
++  if [[ "$reboot" == '1' ]]; then
+     # Reboot
+     reboot_machine "$reboot" "$target" "$flag"
+   fi
+```
+
+Desse modo, não atualizamos o bootloader e adicionamos uma opção apenas para rebootar a máquina
+
+# Conclusão do Pull Request
+
+Após 3 dias da resposta, fui implementar o que ele havia pedido e me deparei com outra mensagem do mesmo mantenedor avisando que já havia implementado em outro pull request que ele estava desenvolvendo, o que era um grande bloco de mudanças, incluindo essa. Portanto, ele fechou o Pull Request, visto que a implementação já teria sido feita na pull request dele.
+
+# O que fazer agora?
+
+Mesmo que não consegui implementar o meu pull request, fiquei feliz com o resultado pois, para implementar tal solução, obtive um aprendizado forte sobre gerenciamento de máquinas virtuais, área que eu possuía um gap de conhecimento.
+
+Agora, fui a procura de outra issue para resolver, ainda no kw, e reparei com a [*issue* #1182][*issue*-1182] que é sobre refatoração e UX, coisas que me interessam para realizar a contribuição.
 
 [MAC0470]: https://uspdigital.usp.br/jupiterweb/obterDisciplina?nomdis=&sgldis=MAC0470
 [kw]: https://github.com/kworkflow/kworkflow
@@ -56,3 +82,4 @@ Assim, apenas espero os mantenedores responderem a *pull request* e a *issue* pa
 [siqueira]: https://github.com/rodrigosiqueira
 [artigo-ambiente-kernel]: https://lucas-santt.github.io/posts/ambiente-kernel/
 [pull-request]: https://github.com/kworkflow/kworkflow/pull/1216
+[*issue*-1182]: https://github.com/kworkflow/kworkflow/issues/1182
