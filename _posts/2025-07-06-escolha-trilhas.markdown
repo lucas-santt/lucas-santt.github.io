@@ -5,13 +5,13 @@ date:   2025-07-06 20:20:32 -0300
 categories: IME-USP MAC0470-Software_Livre
 ---
 
-Durante a minha graduação do curso de Bacharelado de Ciência da computação no Instituto de matemática e estatística da Universidade de São Paulo (IM-USP) eu possuo a escolha de diversas disciplinas para me matricular
+Durante a minha graduação do curso de Bacharelado de Ciência da computação no Instituto de matemática e estatística da Universidade de São Paulo (IME-USP) eu possuo a escolha de diversas disciplinas para me matricular
 
-Desse modo, com um conjunto de disciplinas optativas específicas, posso seguir uma trilha realizada pelo departamente para que eu consiga desenvolver melhor minhas habildades em uma área específica.
+Desse modo, com um conjunto de disciplinas optativas específicas, posso seguir uma trilha realizada pelo departamente para que eu consiga desenvolver melhor minhas habilidades em uma área específica.
 
 # Qual trilha seguirei?
 
-Como não possuo interesse em teoria da compjtação, exclui a sua trilha do planejamento.
+Como não possuo interesse em teoria da computação, exclui a sua trilha do planejamento.
 
 As outras três trilhas são de áreas que me interessam bastante, principalmente a de Ciência de Dados e Sistemas de Software. Entretanto, como sou técnico em Desenvolvimento de Sistemas por um curso técnico que fiz integrado ao meu ensino médio, possuo mais interesse e facilidade na trilha de Sistemas de Software.
 
